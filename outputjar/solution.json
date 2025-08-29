@@ -1,0 +1,7 @@
+{
+  "regNo" : "22BCE3037",
+  "savedAt" : "2025-08-29T06:02:56.997217Z",
+  "finalQuery" : "SELECT p.amount AS salary,\n       e.first_name || ' ' || e.last_name AS name,\n       CAST(date_part('year', age(current_date, e.dob)) AS int) AS age,\n       d.department_name\nFROM payments p\nJOIN employee e   ON e.emp_id = p.emp_id\nJOIN department d ON d.department_id = e.department\nWHERE EXTRACT(DAY FROM p.payment_time) <> 1\nORDER BY p.amount DESC\nLIMIT 1;",
+  "accessToken" : "eyJhbGciOiJIUzI1NiJ9.eyJyZWdObyI6IjIyQkNFMzAzNyIsIm5hbWUiOiJTYW1lZXIgUGFsa2FyIiwiZW1haWwiOiJzYW1lZXIuc2F0eWFqaXQyMDIyQHZpdHN0dWRlbnQuYWMuaW4iLCJzdWIiOiJ3ZWJob29rLXVzZXIiLCJpYXQiOjE3NTY0NDczNzcsImV4cCI6MTc1NjQ0ODI3N30.erxiCHS88GG8bZcSIKCKrqgdjZ9674MpsKqrE0QIg2U",
+  "webhookUrl" : "https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA"
+}
