@@ -1,0 +1,10 @@
+server:
+  port: 0
+
+challenge:
+  name: "Sameer Palkar"
+  regNo: "22BCE3037"   
+  email: "sameer.satyajit2022@vitstudent.ac.in"
+
+  baseUrl: "https://bfhldevapigw.healthrx.co.in"
+  generatePath: "/hiring/generateWebhook/JAVA"   
